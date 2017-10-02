@@ -1,0 +1,4 @@
+= `bluebird`
+
+This is an example project I've made for a headhunter company to land a job.
+I've landed the job, the code remains and in retrospect it looks and works damn well!
