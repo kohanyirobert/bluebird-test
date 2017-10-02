@@ -1,0 +1,36 @@
+Enter one of the commands just below and press enter.
+
+             help - Prints this.
+            usage - Prints information on how to invoke the program from the
+                    command-line and gives some information on the available
+                    options.
+              arg - Prints the arguments the program was invoked with.
+           params - Same as arg.
+ horizontal table - Prints a *big-ass* table. It contains every (relevant)
+                    piece of information in the in-memory database.
+
+                    If your terminal isn't wide enough, then try resize it, so
+                    that the table could fit on screen in its entire glory!
+            table - Same as horizontal table.
+   vertical table - Prints the same stuff as with horizontal table but in a
+                    longer, probably more readable format.
+             vert - Same as vertical table.
+             town - Prints the summarized town-wide consumption.
+           street - Prints summarized street-wise consumptions.
+
+                    This parameter accepts a single argument: a street name. If
+                    supplied the summary will be printed only for that street.
+
+                    E.g. "street Coronita Parkway"
+
+                    (It's case-sensitive, no additional whitespace allowed.) 
+         building - Prints summarized per building consumptions.
+
+                    Accepts a building name parameter in the same fashion as
+                    street does.
+            house - Prints summarized consumptions per household.
+
+                    Just as street and building this command also accepts an
+                    argument: the house/residence name.
+             exit - Exits the program.
+             quit - Same as quit.

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="bluebird-test" verbose="1">
+  <test name="default">
+    <classes>
+      <class name="com.github.kohanyirobert.bbt.GaugeTest"/>
+    </classes>
+  </test>
+</suite>

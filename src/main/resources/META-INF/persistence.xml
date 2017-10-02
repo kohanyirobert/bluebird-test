@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+  version="2.0">
+  <persistence-unit name="bluebird-test">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.github.kohanyirobert.bbt.model.Town</class>
+    <class>com.github.kohanyirobert.bbt.model.Street</class>
+    <class>com.github.kohanyirobert.bbt.model.Building</class>
+    <class>com.github.kohanyirobert.bbt.model.House</class>
+    <class>com.github.kohanyirobert.bbt.model.Consumer</class>
+    <class>com.github.kohanyirobert.bbt.model.Producer</class>
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby:memory:bluebird-test;create=true"/>
+
+      <property name="hibernate.hbm2ddl.auto" value="create"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.use_sql_comments" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
