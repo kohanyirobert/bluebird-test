@@ -1,4 +1,30 @@
 = `bluebird`
 
 This is an example project I've made for a headhunter company to land a job.
-I've landed the job, the code remains and in retrospect it looks and works damn well!
+
+The goal of the application is to simulate a city's power consumption/production, storing house-level data in a database.
+
+It features
+
+* JPA and Hibernate - to store power consumption/production data. 
+* Apache Derby - used as an in-memory database.
+* Maven - to create shippable distribution packages using assemblies.
+* TestNG - for simple unit tests.
+
+I got the job, the code remains and in retrospect it looks and works damn well!
+
+NOTE: The source contains a few comments in Hungarian as it was a requirement. 
+
+== Running
+
+Run `./mvnw clean package` then unpack the appropriate distribution archive created in the `target/` folder and run the program.
+
+```
+./mvnw clean package
+unzip -d dist target\bluebird-test-1-cmd.zip
+cd dist/bluebird-test-1
+default.cmd
+help
+```
+
+NOTE: Use the archived tagged with `sh` on Linux/OS X.

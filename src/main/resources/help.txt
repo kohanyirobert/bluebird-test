@@ -4,7 +4,7 @@ Enter one of the commands just below and press enter.
             usage - Prints information on how to invoke the program from the
                     command-line and gives some information on the available
                     options.
-              arg - Prints the arguments the program was invoked with.
+             args - Prints the arguments the program was invoked with.
            params - Same as arg.
  horizontal table - Prints a *big-ass* table. It contains every (relevant)
                     piece of information in the in-memory database.
